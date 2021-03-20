@@ -1,0 +1,78 @@
+<resources>
+    <string name="app_name">Onbalans Monitor</string>
+    <string name="app_version">versie 1.1</string>
+
+    <string name="preference_file_key">com.koensimonides.onbalansmonitor.prefs</string>
+
+    <string name="url_imbalance_delta">https://www.tennet.org/xml/balancedeltaprices/balans-delta.xml</string>
+    <string name="url_operational_messages">https://www.tennet.org/operationalreports/feed.aspx</string>
+
+    <string name="data_format_emergency_power">Geen noodtoestand</string>
+    <string name="data_format_no_emergency_power">Geen noodtoestand</string>
+    <string name="data_format_no_price">Geen prijs</string>
+    <string name="data_format_no_connection">(geen verbinding met TenneT)</string>
+    <string name="data_format_no_time">--:--</string>
+    <string name="data_format_minute">minuten</string>
+
+    <string name="notification_alarm_channel_name">Onbalans Monitor Alarm</string>
+    <string name="notification_alarm_channel_description">Alarm notificaties, instelbaar in app</string>
+    <string name="notification_persist_channel_name">Onbalans Monitor Status</string>
+    <string name="notification_persist_channel_description">Doorgaande status notificatie</string>
+    <string name="notification_prefix_record_time">Tijd laatste prijspunt:</string>
+    <string name="notification_prefix_imbalance_price_normal">Onbalans prijs:</string>
+    <string name="notification_prefix_imbalance_price_high">Onbalans prijs hoog:</string>
+    <string name="notification_prefix_imbalance_price_low">Onbalans prijs laag:</string>
+    <string name="notification_emergency_power">Noodvermogen aanvraag van TenneT</string>
+    <string name="notification_operational_message">Nieuw operationeel bericht van TenneT</string>
+
+    <string name="main_title">Onbalans Monitor</string>
+    <string name="main_history_unavailable">Historie wordt niet ondersteund in deze versie van Onbalans Monitor</string>
+
+    <string name="navigation_table_title">Tabel</string>
+    <string name="navigation_home_title">Dashboard</string>
+    <string name="navigation_messages_title">Berichten</string>
+    <string name="navigation_settings_title">Instellingen</string>
+    <string name="navigation_history_title">Historie</string>
+
+    <string name="dashboard_fragment_title">Dashboard</string>
+    <string name="dashboard_most_recent_price_label">meest recente prijs</string>
+    <string name="dashboard_chart_prices">Prijzen</string>
+    <string name="dashboard_now_label">nu</string>
+
+    <string name="messages_fragment_title">TenneT Operationele Berichtgeving</string>
+    <string name="messages_none_open">Geen bericht geopend</string>
+    <string name="messages_page_title">TenneT Operationele Berichtgeving</string>
+    <string name="messages_open_link_description">Open link</string>
+
+    <string name="table_fragment_title">30 minuten tabel</string>
+    <string name="table_title_label">30 minuten tabel</string>
+    <string name="table_index_dispatch_label">Regel</string>
+    <string name="table_index_reserve_label">Reserve</string>
+    <string name="table_index_emergency_label">Nood</string>
+    <string name="table_index_price_label">Prijsvorming</string>
+    <string name="table_index_time_label">Tijd</string>
+    <string name="table_index_upward_label">Op</string>
+    <string name="table_index_downward_label">Af</string>
+    <string name="table_index_emergency_range_label">(0/1)</string>
+
+    <string name="settings_fragment_title">Instellingen</string>
+    <string name="settings_title_notification_label">Notificaties</string>
+    <string name="settings_persistent_notification">doorgaande status notificatie</string>
+    <string name="settings_mute">stille modus</string>
+    <string name="settings_emergency_label">alarm bij noodvermogen</string>
+    <string name="settings_operational_message_label">alarm bij operational message</string>
+    <string name="settings_high_price_label">alarm bij hoge prijs</string>
+    <string name="settings_high_limit_label">hoge limiet:</string>
+    <string name="settings_price_label">prijs</string>
+    <string name="settings_low_price_label">alarm bij lage prijs</string>
+    <string name="settings_low_limit_label">lage limiet:</string>
+    <string name="settings_title_data_label">Gegevens</string>
+    <string name="settings_linear_graph">lineare grafiek</string>
+    <string name="settings_update_frequency_label">update frequentie:</string>
+    <string name="settings_history_length_label">historie lengte:</string>
+    <string name="settings_copyright_notice">© Koen Simonides, 2021</string>
+
+    <string name="history_fragment_title">Historie</string>
+
+
+</resources>

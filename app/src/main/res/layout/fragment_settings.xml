@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="32dp">
+
+        <TextView
+            android:id="@+id/settings_notifications_label"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="32dp"
+            android:text="@string/settings_title_notification_label"
+            android:textColor="@color/general_black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/settings_switch_persistent_notification"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/bg_r10_nesw"
+            android:padding="16dp"
+            android:text="@string/settings_persistent_notification"
+            app:layout_constraintEnd_toEndOf="@+id/settings_notifications_label"
+            app:layout_constraintStart_toStartOf="@+id/settings_notifications_label"
+            app:layout_constraintTop_toBottomOf="@+id/settings_notifications_label" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/settings_switch_mute"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_r10_nesw"
+            android:padding="16dp"
+            android:text="@string/settings_mute"
+            app:layout_constraintEnd_toEndOf="@+id/settings_notifications_label"
+            app:layout_constraintStart_toStartOf="@+id/settings_notifications_label"
+            app:layout_constraintTop_toBottomOf="@+id/settings_switch_persistent_notification" />
+
+        <CheckBox
+            android:id="@+id/settings_checkbox_emergency"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_r10_nesw"
+            android:padding="16dp"
+            android:text="@string/settings_emergency_label"
+            app:layout_constraintEnd_toEndOf="@+id/settings_notifications_label"
+            app:layout_constraintStart_toStartOf="@+id/settings_notifications_label"
+            app:layout_constraintTop_toBottomOf="@+id/settings_switch_mute" />
+
+        <CheckBox
+            android:id="@+id/settings_checkbox_operational_message"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_r10_nesw"
+            android:padding="16dp"
+            android:text="@string/settings_operational_message_label"
+            app:layout_constraintEnd_toEndOf="@+id/settings_notifications_label"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/settings_notifications_label"
+            app:layout_constraintTop_toBottomOf="@+id/settings_checkbox_emergency" />
+
+        <CheckBox
+            android:id="@+id/settings_checkbox_high_price"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_r10_n"
+            android:padding="16dp"
+            android:text="@string/settings_high_price_label"
+            app:layout_constraintEnd_toEndOf="@+id/settings_notifications_label"
+            app:layout_constraintStart_toStartOf="@+id/settings_notifications_label"
+            app:layout_constraintTop_toBottomOf="@+id/settings_checkbox_operational_message" />
+
+        <TextView
+            android:id="@+id/settings_high_price_label"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:background="@drawable/bg_r10_sw"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="@string/settings_high_limit_label"
+            app:layout_constraintBottom_toBottomOf="@+id/settings_high_price_decimal_field"
+            app:layout_constraintEnd_toStartOf="@+id/settings_high_price_decimal_field"
+            app:layout_constraintStart_toStartOf="@+id/settings_checkbox_high_price"
+            app:layout_constraintTop_toTopOf="@+id/settings_high_price_decimal_field" />
+
+        <EditText
+            android:id="@+id/settings_high_price_decimal_field"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_r10_se"
+            android:ems="10"
+            android:hint="@string/settings_price_label"
+            android:imeOptions="actionDone"
+            android:importantForAutofill="no"
+            android:inputType="numberSigned|numberDecimal"
+            android:padding="8dp"
+            android:singleLine="true"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@+id/settings_checkbox_high_price"
+            app:layout_constraintStart_toEndOf="@+id/settings_high_price_label"
+            app:layout_constraintTop_toBottomOf="@+id/settings_checkbox_high_price" />
+
+        <CheckBox
+            android:id="@+id/settings_checkbox_low_price"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_r10_n"
+            android:padding="16dp"
+            android:text="@string/settings_low_price_label"
+            app:layout_constraintEnd_toEndOf="@+id/settings_notifications_label"
+            app:layout_constraintStart_toStartOf="@+id/settings_notifications_label"
+            app:layout_constraintTop_toBottomOf="@+id/settings_high_price_decimal_field" />
+
+        <TextView
+            android:id="@+id/settings_low_price_label"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:background="@drawable/bg_r10_sw"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="@string/settings_low_limit_label"
+            app:layout_constraintBottom_toBottomOf="@+id/settings_low_price_decimal_field"
+            app:layout_constraintEnd_toStartOf="@+id/settings_low_price_decimal_field"
+            app:layout_constraintStart_toStartOf="@+id/settings_checkbox_low_price"
+            app:layout_constraintTop_toTopOf="@+id/settings_low_price_decimal_field" />
+
+        <EditText
+            android:id="@+id/settings_low_price_decimal_field"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_r10_se"
+            android:ems="10"
+            android:hint="@string/settings_price_label"
+            android:imeOptions="actionDone"
+            android:importantForAutofill="no"
+            android:inputType="numberSigned|numberDecimal"
+            android:padding="8dp"
+            android:singleLine="true"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@+id/settings_checkbox_low_price"
+            app:layout_constraintStart_toEndOf="@+id/settings_low_price_label"
+            app:layout_constraintTop_toBottomOf="@+id/settings_checkbox_low_price" />
+
+        <TextView
+            android:id="@+id/settings_graph_view_label"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="32dp"
+            android:text="@string/settings_title_data_label"
+            android:textColor="@color/general_black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/settings_low_price_decimal_field" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/settings_switch_linear_graph"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/bg_r10_nesw"
+            android:padding="16dp"
+            android:text="@string/settings_linear_graph"
+            app:layout_constraintEnd_toEndOf="@+id/settings_graph_view_label"
+            app:layout_constraintStart_toStartOf="@+id/settings_graph_view_label"
+            app:layout_constraintTop_toBottomOf="@+id/settings_graph_view_label" />
+
+        <TextView
+            android:id="@+id/settings_update_frequency_label"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:background="@drawable/bg_r10_w"
+            android:gravity="center"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:text="@string/settings_update_frequency_label"
+            app:layout_constraintBottom_toBottomOf="@+id/settings_update_frequency_spinner"
+            app:layout_constraintEnd_toStartOf="@+id/settings_update_frequency_spinner"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toStartOf="@+id/settings_graph_view_label"
+            app:layout_constraintTop_toTopOf="@+id/settings_update_frequency_spinner" />
+
+        <Spinner
+            android:id="@+id/settings_update_frequency_spinner"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_r10_e"
+            app:layout_constraintEnd_toEndOf="@+id/settings_switch_linear_graph"
+            app:layout_constraintStart_toEndOf="@+id/settings_update_frequency_label"
+            app:layout_constraintTop_toBottomOf="@+id/settings_switch_linear_graph" />
+
+        <TextView
+            android:id="@+id/settings_history_length_label"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/bg_r10_w"
+            android:gravity="center"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:text="@string/settings_history_length_label"
+            app:layout_constraintBottom_toBottomOf="@+id/settings_history_length_spinner"
+            app:layout_constraintEnd_toEndOf="@+id/settings_update_frequency_label"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toStartOf="@+id/settings_update_frequency_label"
+            app:layout_constraintTop_toTopOf="@+id/settings_history_length_spinner" />
+
+        <Spinner
+            android:id="@+id/settings_history_length_spinner"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="32dp"
+            android:background="@drawable/bg_r10_e"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/settings_switch_linear_graph"
+            app:layout_constraintStart_toEndOf="@+id/settings_update_frequency_label"
+            app:layout_constraintTop_toBottomOf="@+id/settings_update_frequency_spinner" />
+
+        <TextView
+            android:id="@+id/settings_app_version_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="12dp"
+            android:text="@string/app_version"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/settings_copyright_label"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/settings_history_length_label" />
+
+        <TextView
+            android:id="@+id/settings_copyright_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:text="@string/settings_copyright_notice"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/settings_app_version_label"
+            app:layout_constraintTop_toBottomOf="@+id/settings_history_length_label" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

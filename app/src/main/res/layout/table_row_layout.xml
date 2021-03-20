@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/table_row_layout"
+    android:layout_width="match_parent"
+    android:layout_height="32dp">
+
+
+    <TextView
+        android:id="@+id/table_time"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:gravity="center"
+        android:text="@string/data_format_no_time"
+        android:textColor="@color/general_black"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/table_upward_dispatch"
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textColor="@color/general_black"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/table_downward_dispatch"
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textColor="@color/general_black"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/table_reserve_upward_dispatch"
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textColor="@color/general_black"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/table_reserve_downward_dispatch"
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textColor="@color/general_black"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/table_emergency_power"
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textColor="@color/general_black"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/table_price_high"
+        android:layout_width="0dp"
+        android:layout_weight="3"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textColor="@color/general_black"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/table_price_low"
+        android:layout_width="0dp"
+        android:layout_weight="3"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textColor="@color/general_black"
+        android:textSize="14sp" />
+
+</LinearLayout>

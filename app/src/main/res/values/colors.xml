@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="general_black">#FF000000</color>
+
+    <color name="general_white">#F3F3F3</color>
+    <color name="general_white_highlight">#FFFFFFFF</color>
+
+    <color name="general_red">#DD1708</color>
+
+    <color name="general_gray">#434343</color>
+    <color name="general_gray_highlight">#757575</color>
+
+    <color name="general_green">#05A351</color>
+    <color name="general_green_secondary">#08A152</color>
+    <color name="general_green_highlight">#4ED17A</color>
+
+    <color name="chart_00">#E45A50</color>
+    <color name="chart_15">#F7F454</color>
+    <color name="chart_30">#3CCED3</color>
+    <color name="chart_45">#E469FA</color>
+
+</resources>
